@@ -91,7 +91,7 @@ Create a function to display the city name if the string begins with "Los" or "N
 
 
 let displayCertainCityNames = (city) => {
-    if (city.startsWith("Los") === true || city.startsWith("New") === true) {
+    if (city.startsWith("Los") || city.startsWith("New")) {
         return city 
     } else 
     return ""
@@ -108,11 +108,12 @@ Create a function to calculate the sum of three elements of a given array of int
 
 
 let randomArray2 = [1,2,3]
-
-let calculateSumOfElementsInArray = () => {
-    return randomArray2[0] + randomArray2[1] + randomArray2[2] 
+let randomarray4 = [1,5,8]
+let calculateSumOfElementsInArray = (arr) => {
+    
+    return arr[0] + arr[1] + arr[2] 
 }
-console.log(calculateSumOfElementsInArray()) // prints 6
+console.log(calculateSumOfElementsInArray(randomArray4)) // prints 6
 
 
 /*
@@ -123,7 +124,7 @@ Create a function to test whether an array of integers of length 2 contains 1 or
 let randomArray3 = [1,4];
 
 let functionTotest = () => {
-    if (randomArray3[0] === 1 || randomArray3[1] === 1 || randomArray3[0,1] === 3 || randomArray3[0,1] === 3) {
+    if (randomArray3[0] === 1 || randomArray3[1] === 1 || randomArray3[0] === 3 || randomArray3[1] === 3) {
         return true
     } else 
     return false
@@ -145,7 +146,7 @@ let functionTotest2 = () => {
     } else 
     return true
 }
-console.log(functionTotest2()) // Returns false // ASK TEACHING ASSISTANT ABOUT THIS ONE - A BIT TRICKY.
+console.log(functionTotest2()) // Returns false // 
 
 
 
@@ -161,7 +162,7 @@ let longestInTheArray = [];
 let findTheLongestString = () => {
     for (let i = 0; i < arrayOfStrings1.length; i++) {
         if (arrayOfStrings1[i].length > arrayLength)
-        longestInTheArray.pop(arrayOfStrings1[i].length);
+        longestInTheArray.push(arrayOfStrings1[i].length);
     }
 }
 findTheLongestString()
@@ -238,7 +239,6 @@ let checkIfPostitieandNegative = (nr1, nr2) => {
 checkIfPostitieandNegative(2, -1) // prints true 
 checkIfPostitieandNegative(-2, 2) // prints true 
 checkIfPostitieandNegative(2, 2) // prints false 
-
 
 /* 
 17)
